@@ -1,0 +1,37 @@
+print('''
+ _                                     _     _                 _ 
+| |                                   (_)   | |               | |
+| |_ _ __ ___  __ _ ___ _   _ _ __ ___ _ ___| | __ _ _ __   __| |
+| __| '__/ _ \/ _` / __| | | | '__/ _ \ / __| |/ _` | '_ \ / _` |
+| |_| | |  __/ (_| \__ \ |_| | | |  __/ \__ \ | (_| | | | | (_| |
+ \__|_|  \___|\__,_|___/\__,_|_|  \___|_|___/_|\__,_|_| |_|\__,_|
+''')
+print("Welcome to Treasure Island.")
+print("Your opportunity to find endless treasure or be devoured!!!.") 
+
+#https://www.draw.io/?lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&title=Treasure%20Island%20Conditional.drawio#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1oDe4ehjWZipYRsVfeAx2HyB7LCQ8_Fvi%26export%3Ddownload
+
+#Write your code below this line 👇
+direction = input("Where would you like to go? Left or Right: ")
+direction_1 = direction.lower()
+if direction_1 == "left":
+    waitorwalk = input("Would you like to walk or wait for a plane? ")
+    waitorwalk_1 = waitorwalk.lower()
+    if waitorwalk_1 == "wait for a plane":
+        print("You have been attacked by a dinosaur, GAME OVER!!!")
+    elif waitorwalk_1 == "walk":
+        door = input("Which door would you like to use: Green, Blue or Red? ")
+        main_door = door.lower()
+    else:
+        print("You have a coconut head, GAME OVER!!!")
+    if main_door == "green":
+        print("You have fallen into a hole, GAME OVER!!!")
+    elif main_door =="blue":
+        print("Congratulations, you just found the TREASURE!!!")
+    elif main_door == "red":
+        print("Your leg has been chopped off by a trap cutter. GAME OVER!!!")
+    else:
+        print("GAME OVER. OLODO!!!")
+
+else:
+    print("You have been eaten by a python, GAME OVER!!!")
